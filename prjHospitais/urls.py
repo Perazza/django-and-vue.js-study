@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from homepage.views import GamesViewSet
+from rest_framework import routers
+
+router = routers.DefaultRouter()
+router.register(r'games', GamesViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', include('homepage.urls')),
+    path('admin/', admin.site.urls),
+    path('homepage/api/', include(router.urls))
 ]

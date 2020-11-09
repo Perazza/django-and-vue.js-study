@@ -1,6 +1,19 @@
+from rest_framework import viewsets
+
 from django.shortcuts import render
+from django.core.serializers import serialize
+from django.http import HttpResponse
 
-# Create your views here.
+from homepage.models import Games
+from homepage.serializer import GameSerializer
 
-def index(request):
-    return render(request, "homepage/index.html")
+
+## API
+class GamesViewSet(viewsets.ModelViewSet):
+    queryset = Games.objects.all()
+    serializer_class = GameSerializer
+
+## INDEX
+def index(request): 
+    games = Games.objects.all()
+    return render(request, "homepage/index.html", { 'games' : games})
