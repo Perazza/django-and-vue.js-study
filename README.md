@@ -2,11 +2,11 @@
 
 A Simple code to understade de relation between the method that intagrates Django and Vue.js
 
-//
 
 ### There's nothing beautiful here, but de model with vue works.
+ To run just install a env or conda env
 
-### To run just install a env or conda env
+
 ## To run with conda env:
 #### conda create --name name-env
 #### pip install django
