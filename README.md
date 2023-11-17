@@ -9,7 +9,7 @@ A Simple code to understade de relation between the method that intagrates Djang
 ### To run just install a env or conda env
 #
 #
-## to conda run:
+## To run with conda env:
 #### conda create --name name-env
 #### pip install django
 #### pip install djangorestframework-jsonapi
