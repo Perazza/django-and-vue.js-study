@@ -9,6 +9,6 @@ A Simple code to understade de relation between the method that intagrates Djang
 
 ## To run with conda env:
 #### conda create --name name-env
-#### pip install django
-#### pip install djangorestframework-jsonapi
-#### python manage.py runserver
+pip install django
+pip install djangorestframework-jsonapi
+python manage.py runserver
